@@ -1,0 +1,122 @@
+* {
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    width: 100%;
+    height: 100vh;
+    background-color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    color: #fff;
+}
+
+.logo {
+    height: 200px;
+    object-fit: cover;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.inputcontainer {
+    max-width: 350px;
+    text-align: center;
+}
+
+.container-password {
+    font-size: 0.7em;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #d3fb50;
+    height: 30px;
+    outline: none;
+    margin-top: 10px;
+    overflow: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: #52611f;
+}
+
+.buttoncss {
+    font-weight: 600;
+    background-color: #d3fb50;
+    padding: 4%;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.7em;
+    color: #52611f;
+    outline: none;
+    margin-top: 2em;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.container-password {
+    max-width: 350px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+ 
+.title {
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.senha {
+    border: 2px solid #52611f;
+    height: 70px;
+    background-color: rgba(82, 97, 31,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.senha:hover {
+    transform: scale(1.02);
+}
+
+.cliqueparacopiar {
+    background-color: #d3fb50;
+    color: #000;
+    position: relative;
+    top:20px;
+    text-align: center;
+    visibility: hidden;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.container-password:hover .cliqueparacopiar {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
